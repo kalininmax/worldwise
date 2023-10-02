@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PageNav from '../components/PageNav';
 import Button from '../components/Button';
 
 import styles from './Login.module.css';
@@ -19,6 +20,8 @@ const Login = () => {
 
   return (
     <main className={styles.login}>
+      <PageNav />
+
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.row}>
           <label htmlFor="email">Email address</label>
